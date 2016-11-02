@@ -64,14 +64,18 @@ requestAjax("../../php/code/class1.php",function(obj){
 				namesbox.appendTo(div3)
 				for (var k = 0; k < arr.length; k++) {
 					var a = $("<a>")
+					a.addClass("a")
 					a.text(arr[k])
 					a.appendTo(namesbox)
 				};
 			};
-
 		};
-		
+
+		$(".a").on("click",function(){
+			var value = $(this).text();
+			window.open("class2.html?name="+value);
+		});
 
 
 
-})
+});
