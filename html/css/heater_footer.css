@@ -1,0 +1,309 @@
+		    /*header头部部分*/
+		   *{
+		    	    margin: 0;
+		    	    padding: 0;
+		    	    list-style: none;
+		    }
+         body{
+            font: 14px/1.5 "Helvetica Neue","Microsoft Yahei",Helvetica,Arial,"Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;color:#333;
+         }
+         img{
+            vertical-align: top;
+         }
+         a{
+            color: #333;text-decoration: none;cursor: pointer;
+         }
+			.header{
+				width: 100%;
+				height: 34px;
+				background: #f5f5f5;
+				font-size: 12px;
+				color: #999;
+				font-family: arial;
+			}
+			.header .header_count{
+				width: 1200px;
+				height: 34px;
+				margin: 0 auto;
+			}
+			.header .header_left{
+				background: url(../img/icon_0.png) left center no-repeat;
+				display: inline-block;
+				width: 45px;
+				height: 34px;
+				line-height: 36px;
+				padding-left: 20px;
+				color: #999;
+			}
+			.header .header_left:hover{
+				background: url(../img/icon_0_1.png) left center no-repeat;
+				color: #ff5776;
+			}
+			.header .header_right{
+				float: right;
+				position: relative;
+			}
+			.header .header_right span{
+				margin: 0 5px;
+				font-family: arial;
+				display: inline-block;
+				height: 34px;
+				line-height: 36px;
+				color: #ddd;
+			}
+			.header .header_right .enroll{
+				background: url(../img/icon_3.png) left center no-repeat;
+				padding-left: 22px;
+				display: inline-block;
+				height: 34px;
+				color: #999;
+			}
+			.header .header_right .enroll:hover{
+				background: url(../img/icon_3_1.png) left center no-repeat;
+				color: #ff5776;
+			}
+			.header .header_right .londing{
+				color: #999;
+			}
+			.header .header_right .londing:hover{
+				color: #ff5776;
+			}
+			.header .header_right .down{
+				background: url(../img/icon_mob.png) left center no-repeat;
+				display: inline-block;
+				height: 34px;
+				padding-left: 22px;
+				color: #999;
+				cursor: pointer;
+			}
+			.header .header_right .down:hover{
+				color: #ff5776;
+			}
+			.header .header_right .phone{
+				background: url(../img/icon_tel.png) left center no-repeat;
+				display: inline-block;
+				height: 34px;
+				padding-left: 22px;
+				color: #ff5776;
+			}
+			.header .header_right .down_1{
+				position: absolute;
+				width: 162px;
+				height: 160px;
+				box-shadow: 0px 2px 10px #dadada;
+				left: 135px;
+				text-align: center;
+				display: none;
+				background: #fff;
+				z-index: 999;
+			}
+			/*footer底部部分*/
+			.footer{
+         		width: 100%;
+         		height: 374px;
+         		border-top: 1px solid #e5e5e5;
+         	}
+         	.footer .puff{
+         		width: 1160px;
+         		margin: 0 auto;
+         		height: 60px;
+         		overflow: hidden;
+         		padding: 40px 30px;
+         	}
+         	.footer .puff li{
+         		width: 190px;
+         		height: 61px;
+         		float: left;
+         		margin-left: 25px;
+         		padding-left: 70px;
+         		color: #666;
+         		line-height: 24px;
+         	}
+         	.footer .puff li p{
+         		margin-top: 7px;
+         		border-right: 1px solid #eaeaea;
+         	}
+         	.footer .puff .puff_1{
+         		background: url(../img/icon-ensure-01.png) left center no-repeat;
+         	}
+         	.footer .puff .puff_2{
+         		background: url(../img/icon-ensure-02.png) left center no-repeat;
+         	}
+         	.footer .puff .puff_3{
+         		background: url(../img/icon-ensure-03.png) left center no-repeat;
+         	}
+         	.footer .puff .puff_4{
+         		background: url(../img/icon-ensure-04.png) left center no-repeat;
+         	}
+         	.footer .about{
+         		width: 1200px;
+         		margin: 0 auto;
+         		height: 188px;
+         		border-top: 1px solid #e5e5e5;
+         		color: #666;
+         		padding: 40px 0;
+         		font-size: 14px;
+         		position: relative;
+         	}
+         	.footer .about ul a{
+         		color: #666;
+         	}
+         	.footer .about ul li{
+         		padding: 0 2px;
+         	}
+         	.footer .about p{
+         		padding-bottom: 20px;
+         	}
+         	.footer .about .footer_p{
+         		background: url(../img/supportTip-bg.png) left top no-repeat;
+         		padding-left: 20px;
+         	}
+         	.footer .about .footer_down{
+         		width: 162px;
+         		position: absolute;
+         		right: -30px;
+         		top: 40px;
+         		text-align: center;
+         	}
+         /*	导航固定部分*/
+         	.home_main{
+         		width: 100%;
+         	}
+         	.home_main .home_top{
+         		width: 1200px;
+         		height: 100px;
+         		margin: 0 auto;
+         		position: relative;
+         	}
+         	.home_main .home_top a{
+         		position: relative;
+         		top: 20px;
+         		margin-right: 35px;
+         	}
+         	.home_main .home_top .shanghai{
+         		width: 93px;
+         		height: 40px;
+         		text-align: center;
+         		line-height: 40px;
+         		display: inline-block;
+         		border-left: 1px solid #e5e5e5;
+         		color: #999;
+               font-size: 16px;
+               margin-top: 30px
+         	}
+         	.home_main .home_top .home_search{
+         		width: 471px;
+         		margin: 0 auto;
+         		position: absolute;
+         		top: 25px;
+         		left: 350px;
+         	}
+         	.home_main .home_top .home_topr{
+         		position: absolute;
+         		right: 30px;
+         		top: 41px;
+         	}
+         	.home_main .home_top #top_search{
+         		width: 398px;
+         		padding-left: 5px;
+         		height: 34px;
+         		border: 1px solid #FF5776;
+         		outline: none;
+         		font-size: 14px;
+         	}
+         	.home_main .home_top .search-btn{
+         		width: 66px;
+         		background: #FF7280;
+         		height: 36px;
+         		outline: none;
+         		border: none;
+         		float: right;
+         		color: #fff;
+         		font-size: 16px;
+         		cursor: pointer;
+         	}
+         	/*U美主页导航条部分*/
+         	.home_main .home_nav{
+         		width: 100%;
+         		height: 40px;
+         		background: #FF5566;
+         	}
+         	.home_main .home_nav .navs{
+         		width: 1200px;
+         		margin: 0 auto;
+         	}
+         	.home_main .home_nav .navs .home_all{
+         		height: 40px;
+         		line-height: 40px;
+         		float: left;
+         		width: 130px;
+         		padding-left: 50px;
+         		background: url(../img/img_home/icon_6.png) 20px center no-repeat #FF6E7D;
+         		color: #fff;
+         		font-size: 14px;
+         		cursor: pointer;
+         		margin-right: 70px;
+               position: relative;
+         	}
+         	.home_main .home_nav .navs .home_nav_four{
+         		height: 40px;
+         		line-height: 40px;
+         		font-size: 14px;
+         	}
+         	.home_main .home_nav .navs .home_nav_four a{
+         		display: inline-block;
+         		height: 40px;
+         		padding: 0 14px;
+         		color: #fff;
+         		margin-right: 30px;
+         	}
+         	.home_main .home_nav .navs .home_nav_four a:hover{
+               background: #e54c5c;
+            }
+            .home_main .home_nav .navs .home_nav_four .home_page:hover{
+               background: #e54c5c;
+            }
+            .jumpWrap{
+               display: none;
+               position: absolute;
+               z-index: 6;
+               top: 40px;
+               left: 0px;
+            }
+            .jumpBox{
+                background: rgba(0,0,0,.7);
+                height: 410px;
+                width: 180px;
+                position: relative;
+                padding: 15px 0;cursor:default;
+
+            }
+            .jumpList{
+                color: white;
+                line-height: 34px;
+                padding: 6px 0 6px 20px;
+                border: 1px solid transparent;            }
+            .jumpList:hover{
+               background: #0f0f0f;color:#FF6E7D;
+            }
+           .jumpList img{
+               width: 20px;height: 20px;vertical-align: middle;margin-right: 10px;
+            }
+            .jumpList span{
+               position: absolute;right: 20px;font-family: arial black;
+            }
+            .secondjump{
+               position: absolute;top:0;left: 180px;height: 420px;padding: 10px 10px;width: 110px;background: #fff;box-shadow: 0.5px 0.5px 0.5px #ccc;display: none;cursor:default;
+            }
+            .secondjumpList{
+               height: 24px;line-height: 24px;padding: 10px 0;color:#666;text-align: center;cursor:pointer;
+            }
+
+
+
+
+
+
+
+
+

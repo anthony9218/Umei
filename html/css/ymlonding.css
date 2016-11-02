@@ -1,0 +1,126 @@
+		    /*登陆网页css*/
+		   *{
+		    	    margin: 0;
+		    	    padding: 0;
+		    	    text-decoration: none;
+		    	    list-style: none;
+		    }
+		    body{
+		    	    background: url(../img/img_londing/ym-lbg.png) center top no-repeat;
+		    	    overflow-x: hidden;
+		    }
+			.lond{
+				height: 970px;
+				width: 1200px;
+				margin: 30px auto 0;
+			}
+			.lond .lond_input{
+				width: 380px;
+				height: 591px;
+				background: #fff;
+				float: right;
+				margin-top: 175px;
+				position: relative;
+			}
+			.lond .lond_input .lond_logo{
+				width: 380px;
+                text-align: center;
+                margin-top: 54px;
+                margin-bottom: 45px;
+			}
+			.lond .lond_input .input_tell,.input_password{
+				width: 300px;
+				height: 46px;
+				margin-left: 40px;
+				margin-bottom: 17px;
+			}
+			.lond .lond_input #lond_tell{
+				width: 265px;
+				height: 46px;
+				border: 1px solid #e5e5e5;
+				background: url(../img/img_londing/icons-1.png) 12px center no-repeat;
+				padding-left: 35px;
+				font-size: 14px;
+				color: #999;
+			}
+			.lond .lond_input #lond_row{
+				width: 265px;
+				height: 46px;
+				border: 1px solid #e5e5e5;
+				background: url(../img/img_londing/icons-2.png) 12px center no-repeat;
+				padding-left: 35px;
+				font-size: 14px;
+				color: #999;
+			}
+			.lond .lond_input #lond_btn{
+				width: 300px;
+				padding: 10px 0;
+				background: #FF5776;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				margin-left: 40px;
+				font-size: 16px;
+				color: #fff;
+				margin-bottom: 23px;
+			}
+			.lond .lond_input .lond_state{
+				font-size: 14px;
+				width: 300px;
+				margin-left: 40px;
+				color: #666;
+			}
+			.lond .lond_input #row_check{
+				width: 14px;
+				height: 14px;
+				opacity: 0.6;
+				margin-right: 6px;
+			}
+			.lond .lond_input .row_after{
+				color: #666;
+			}
+			.lond .lond_input .lond_bottom{
+				width: 300px;
+				margin-top: 35px;
+				margin-left: 40px;
+				height: 130px;
+				color: #777;
+				position: relative;
+			}
+			.lond .lond_input .lob1{
+				display: block;
+				width: 300px;
+				font-size: 14px;
+				text-align: center;
+			}
+			.lond .lond_input .lond_bottom li{
+				width: 90px;
+				border-bottom: 1px solid #666;
+				position: absolute;
+			}
+			.lond .lond_input .lond_bottom .xian1{
+				left: 0;
+				top: 8px;
+			}
+			.lond .lond_input .lond_bottom .xian2{
+				right: 0;
+				top: 8px;
+			}
+			.lond .lond_input .lond_bottom .qq_wx{
+				width: 300px;
+				padding-top: 30px;
+			}
+			.lond .lond_input .lond_bottom .qq_wx span{
+				width: 150px;
+				display: inline-block;
+			}
+			.lond .lond_input .lond_bottom .qq_wx .long_wx{
+				float: right;
+			}
+			.lond .lond_input .lond_bottom .lond_foot{
+				width: 300px;
+				text-align: center;
+				font-size: 14px;
+				color: #333;
+				padding-top: 30px;
+			}

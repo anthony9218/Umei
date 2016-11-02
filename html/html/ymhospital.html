@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>U美，让你好看</title>
+    <link rel="stylesheet" type="text/css" href="../css/heater_footer.css"/>
+    <style media="screen">
+      .main_bg{
+        width: 100%;
+        background: url(../img/img_hospital/bg1.jpg) no-repeat;
+        padding-top: 38px;
+        font-family: Arial;
+      }
+      .main_bg .oall{
+        width: 1080px;
+        height: 239px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 50px 60px;
+        overflow: hidden;
+        position: relative;
+        /*position: relative;
+        position: absolute;*/
+      }
+      .main_bg .pp p{
+        line-height: 25px;
+      }
+      .main_bg .consult{
+        width: 80px;
+        height: 50px;
+        line-height: 50px;
+        display: block;
+        border: 1px solid #ff5566;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        color: #ff5566;
+        padding-left: 30px;
+        background: url(../img/consultation-icon.png) 20px center no-repeat;
+        position: absolute;
+        right: 250px;
+        top: 135px;
+      }
+      .main_bg .inter_nav{
+        width: 1180px;
+        height: 50px;
+        margin: 0 auto;
+        padding: 15px 10px;
+      }
+      .main_bg .inter_nav ul{
+        display: inline-block;
+      }
+      .main_bg .inter_nav ul li{
+        display: inline-block;
+        color: #e5e5e5;
+        margin: 0 20px;
+      }
+      .main_bg .inter_nav ul a{
+        display: inline-block;
+        line-height: 45px;
+        font-size: 18px;
+        color: #666;
+        font-weight: 900;
+        font-family: Arial;
+        transition: 0.1s;
+				outline: none;
+      }
+      .main_bg .inter_nav ul a:hover{
+        color: #ff5566;
+      }
+			/*医院概述部分*/
+			.main_bg .hos_sum{
+				width: 1200px;
+        margin: 0 auto;
+			}
+			.main_bg .hos_sum .sum_one{
+				width: 1200px;
+				height: 50px;
+				border-bottom: 2px solid #e5e5e5;
+			}
+			.main_bg .hos_sum .sum_one span{
+				font-size: 20px;
+				line-height: 50px;
+				border-bottom: 2px solid #ff5566;
+        padding-bottom: 14px;
+				font-weight: 900;
+				color: #333;
+			}
+			.main_bg .hos_sum .sum1 ul li{
+				  margin: 0 30px 30px 0;
+			}
+			.main_bg .hos_sum .sum1 ul li:nth-child(6){
+				  margin-right: 0;
+			}
+			/*医师团队部分*/
+			.main_bg .hos_phy{
+				width: 1200px;
+        margin: 0 auto;
+				margin-bottom: 22px;
+			}
+			.main_bg .hos_phy .phy_two{
+				width: 1200px;
+				height: 50px;
+				border-bottom: 2px solid #e5e5e5;
+			}
+			.main_bg .hos_phy .phy_two span{
+				font-size: 20px;
+				line-height: 50px;
+				border-bottom: 2px solid #ff5566;
+        padding-bottom: 14px;
+				font-weight: 900;
+				color: #333;
+			}
+			/*服务项目部分*/
+			.main_bg .hos_give{
+				width: 1200px;
+        margin: 0 auto;
+				margin-bottom: 22px;
+			}
+			.main_bg .hos_give .give_three{
+				width: 1200px;
+				height: 50px;
+				border-bottom: 2px solid #e5e5e5;
+			}
+			.main_bg .hos_give .give_three span{
+				font-size: 20px;
+				line-height: 50px;
+				border-bottom: 2px solid #ff5566;
+        padding-bottom: 14px;
+				font-weight: 900;
+				color: #333;
+			}
+			/*js内部创建标签样式*/
+			.main_bg .logo_img{
+				display:inline-block;
+				width:250px;
+				float:left;
+			}
+			.main_bg .imglo{
+	        width:200px;
+	        height:200px;
+	        border-radius: 50%;
+			}
+			.main_bg .img_um{
+          position:absolute;
+          left:210px;
+          top:2px;
+      }
+			.main_bg .inter3{
+	        width:390px;
+	        float:left;
+	    }
+			.main_bg .tnav{
+	        float:left;
+	        color: #333;
+	        font-weight:900;
+	        font-size:16px;
+	        line-height: 25px;
+	    }
+			.main_bg .imgnav{
+        width:50px;
+        height:50px;
+        border-radius:50%;
+        float:left;
+        margin-right: 10px;
+      }
+			.main_bg .odiv{
+        width:520px;
+        height:219px;
+        float:left;
+        margin-top:20px;
+        position:relative;
+        font-size: 14px;
+        color:#999;
+      }
+			.main_bg .star{
+        background:url(../img/star-icon.png);
+        width:90px;
+        display:inline-block;
+        height:16px;
+        float:left;
+        margin-right:12px;
+      }
+
+
+
+    </style>
+	</head>
+	<body>
+		<!--header头部固定部分-->
+		<div class="header">
+			<div class="header_count">
+					<a href="#" class="header_left">U美首页</a>
+				<div class="header_right">
+					<span><a href="#" class="enroll">注册</a></span>
+					<span>|</span>
+					<span><a href="#" class="londing">登录</a></span>
+					<span>|</span>
+					<span class="down">U美手机版</span>
+					<div class="down_1">
+						<img src="../img/download6.png"/ style="padding-top: 17px;">
+						<p style="line-height: 24px;">扫一扫，下载手机客户端</p>
+					</div>
+					<span>|</span>
+					<span class="phone">联系客服：021-61520496</span>
+				</div>
+			</div>
+		</div>
+    <!--中间部分-->
+    <div class="home_main">
+			<div class="home_top">
+				<a href="index.html"><img src="../img/logo.png"/></a>
+                <span class="shanghai">上海</span>
+                <div class="home_search">
+                	     <input type="text" name="" id="top_search" value="" placeholder="美白针"/>
+                	     <button class="search-btn">搜索</button>
+                </div>
+                <a href="index.html" class="home_topr"><img src="../img/img_home/head-tips.png"/></a>
+			</div>
+			<!--首页导航条-->
+			<div class="home_nav">
+				<div class="navs">
+					<div class="home_all">全部分类</div>
+					<div class="home_nav_four">
+						<a href="index.html" class="home_page">首页</a>
+						<a href="#" class="home_serve">找服务</a>
+						<a href="#" class="home_hospital" style="background: #e54c5c;">找医院</a>
+						<a href="#" class="home_project">项目介绍</a>
+					</div>
+				</div>
+			</div>
+      <!-- 医院部分 -->
+      <div class="main_bg">
+           <div class="oall">
+              <a href="#" class="consult">咨询</a>
+           </div>
+           <div class="inter_nav">
+                <ul>
+                  <a href="#s_o" name="s_o">医院概述</a>
+                  <li>|</li>
+                  <a href="#p_o" name="p_o">医师团队</a>
+                  <li>|</li>
+                  <a href="#g_o" name="g_o">服务项目</a>
+                </ul>
+           </div>
+           <!-- 医院概述部分 -->
+           <div class="hos_sum">
+                <div class="sum_one" name = "s_o">
+									<span>医院概述</span>
+								</div>
+								<div class="sum1">
+
+								</div>
+           </div>
+					 <!-- 医师团队 -->
+					 <div class="hos_phy">
+                <div class="phy_two" name = "p_o">
+									<span>医师团队</span>
+								</div>
+								<div class="phy1">
+
+								</div>
+           </div>
+					 <!-- 服务项目 -->
+					 <div class="hos_give">
+                <div class="give_three" name = "g_o">
+									<span>服务项目</span>
+								</div>
+								<div class="give1">
+
+								</div>
+           </div>
+      </div>
+    </div>
+		<!--footer底部固定部分-->
+		<div class="footer">
+			<ul class="puff">
+				<li class="puff_1"><p>资质、药品、环境<br>100％实地考察</p></li>
+				<li class="puff_2"><p>我们的价格<br>别人不敢给</p></li>
+				<li class="puff_3"><p>汇聚沪上所有<br>专业美容机构资源</p></li>
+				<li class="puff_4"><p style="border-right:none ;">所有项目由平台<br>人员亲身体验</p></li>
+			</ul>
+			<div class="about">
+				<ul style="padding-bottom: 20px;">
+					<a href="#">关于我们</a>
+					<li style="display: inline;">|</li>
+					<a href="#">办公环境</a>
+					<li style="display: inline;">|</li>
+					<a href="#">联系我们</a>
+					<li style="display: inline;">|</li>
+					<a href="#">诚聘英才</a>
+					<li style="display: inline;">|</li>
+					<a href="#">相关报道</a>
+				</ul>
+				<p>热线电话：400-720-9815 地址：上海市浦东新区博成路181号（世博园卢森堡馆）</p>
+				<p>Copyright © 2014-2016 www.utouu.com, All rights reserved.UTOUU.
+					沪ICP备14043004号-1 上海悠唐网络科技有限公司 版权所有</p>
+				<p class="footer_p">悠唐软件（UTSOFT.CN）提供技术支持</p>
+				<span style="padding-right: 18px;"><img src="../img/icon_3_1.jpg"/></span>
+				<span><img src="../img/icon_1_1.jpg"/></span>
+				<div class="footer_down">
+					<img src="../img/download6.png"/>
+					<p>U美手机客户端</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/header_footer.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <script type="text/javascript">
+  function ask(obj,callback){
+      var request = new XMLHttpRequest();
+      request.open("GET",obj.url,true)
+      request.send();
+      request.onreadystatechange = function(){
+        if (request.readyState == 4 && request.status == 200) {
+          var str = request.responseText;
+          var obj = JSON.parse(str);
+          callback(obj);
+        }
+      }
+    }
+
+    ask({
+      url:'../../php/code/hospital.php',
+    },function(obj) {
+      console.log(obj);
+      var oall = $('.oall');
+      var logo_img = $('<span>');
+			logo_img.addClass('logo_img');
+      oall.append(logo_img);
+      var imglo = $("<img src="+"../img/img_hospital/"+obj[0].hospital_img+">");
+			imglo.addClass('imglo');
+      logo_img.append(imglo);
+      // 医院名称部分
+      var odiv = $('<div>');
+			odiv.addClass('odiv');
+      oall.append(odiv);
+      var h2 = $('<h2>');
+      h2.text(obj[0].hospital_title);
+      h2.css({
+        color:'#333',
+        fontSize:'20px',
+      })
+      odiv.append(h2);
+      var img_um = $('<img src="../img/tag-icon.png">');
+			img_um.addClass('img_um');
+      odiv.append(img_um)
+      var starnum = $('<div>');
+      starnum.text(obj[0].hospital_star);
+      starnum.css({
+        margin:'10px 0 7px',
+        overflow:'hidden',
+        lineHeight:'21px',
+        color:'#999',
+      })
+      var star = $('<span>')
+			star.addClass('star');
+      starnum.append(star)
+      odiv.append(starnum);
+      var honor = $("<span>")
+      honor.css({
+        lineHeight:'25px',
+      })
+      honor.text("资质："+obj[0].hospital_honor)
+      odiv.append(honor);
+      var obo = $('<div>');
+      odiv.append(obo);
+      obo.addClass('pp');
+      var pp =$('.pp');
+      pp[0].innerHTML = obj[0].hospital_over;
+      // 医院内部导航
+      var inter_nav = $('.inter_nav');
+      var inter3 = $('<div>');
+			inter3.addClass('inter3');
+      inter_nav.append(inter3);
+      var imgnav = $("<img src="+"../img/img_hospital/"+obj[0].hospital_img+">");
+			imgnav.addClass('imgnav');
+      inter3.append(imgnav);
+      var tnav = $('<h3>')
+			tnav.addClass('tnav');
+      tnav.text(obj[0].hospital_title)
+      inter3.append(tnav);
+      var honav3 = $('<p>')
+      honav3.css({
+        width:'300px',
+        height:'25px',
+        lineHeight:'25px',
+        float:'left',
+        fontSize:'14px',
+        color:'#999',
+      })
+      honav3.text(obj[0].hospital_honor);
+      inter3.append(honav3);
+			// 医院概述部分
+			var sum1 = $('.sum1');
+			sum1.css({
+			   overflow:'hidden',
+			})
+			var sump = $('<div>');
+			var off = JSON.parse(obj[0].hospital_official);
+			sump.addClass('sump');
+			sump.css({
+				textAlign:'28px',
+				lineHeight:'26px',
+				fontSize: '14px',
+				fontFamily: '微软雅黑, sans-serif',
+				color: 'rgb(85, 85, 85)',
+				textIndent:'2em',
+				marginTop:'22px',
+			})
+			sum1.append(sump);
+			var sump = $('.sump');
+			sump[0].innerHTML = off[0];
+			var sumul = $('<ul>');
+      sumul.css({
+				width:'1030px',
+				margin:'60px auto 20px',
+			})
+			sum1.append(sumul);
+			var sumbg = $('<div>');
+			sumbg.css({
+				width:'1030px',
+				height:'592px',
+				margin:'40px auto 20px',
+			})
+			sumul.append(sumbg)
+			var imgbg1 = $('<div>')
+			imgbg1.css({
+				width:'700px',
+				height:'525px',
+				margin:'0 auto',
+				position:'relative',
+			})
+			sumbg.append(imgbg1);
+			var oimg = off[1];
+			// 大图
+			var bgimg2 = $('<img src='+'../img/img_hospital/'+oimg[0]+'>')
+			bgimg2.css({
+					position: 'absolute',
+					top:'0',
+					left:'0',
+					width:'700px',
+					height:'525px',
+			})
+			bgimg2.addClass('bgimg1');
+			imgbg1.append(bgimg2);
+			for (var i = 0; i < oimg.length; i++) {
+				var sumli = $('<li>');
+				sumli.css({
+					float:'left',
+				})
+				sumli.addClass('sumli');
+				sumul.append(sumli);
+				var sumimg = $('<img src='+'../img/img_hospital/'+oimg[i]+'>')
+				sumimg.css({
+					width:'182px',
+					height:'132px',
+				})
+				sumimg.addClass('sumimg');
+				sumli.append(sumimg);
+				var sumimg1 = $('.sumimg');
+				$(sumimg1[0]).css({
+					border:'2px solid #ff5566',
+					width:'178px',
+					height:'128px',
+				})
+				sumimg.on('click',function(){
+					for (var j = 0; j < oimg.length; j++) {
+						$(sumimg1[j]).css({
+							width:'182px',
+							height:'132px',
+							border:'none',
+						})
+					}
+					$(this).css({
+						border:'2px solid #ff5566',
+						width:'178px',
+						height:'128px',
+					})
+					var bgimg1 = $('.bgimg1');
+					for (var g = 0; g < bgimg1.length; g++) {
+						 bgimg1[g].remove();
+					}
+					var bgimg = $('<img src='+$(this).attr("src")+'>')
+					bgimg.addClass('bgimg1');
+					bgimg.css({
+	            position: 'absolute',
+							top:'0',
+							left:'0',
+							width:'700px',
+							height:'525px',
+							opacity:'0.3',
+							transition:'0.7s',
+					})
+					imgbg1.append(bgimg);
+					var bgimg1 = $('.bgimg1')
+					setInterval(function(){
+						$(bgimg1[0]).css({
+							opacity: '1',
+						})
+					},50)
+				})
+				// 点击结束
+			}
+			// 左右点击效果
+			    // 下一张的创建
+      var next = $('<div>');
+
+
+    })
+
+
+
+
+
+
+
+  </script>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>U美，让你好看</title>
+         <link rel="stylesheet" type="text/css" href="../css/heater_footer.css"/>
+		 <link rel="stylesheet" type="text/css" href="../css/goods_home.css"/>
+         <style type="text/css">
+         	/*U美主页滚动图部分*/
+         	.home_main .home_rolling{
+         		width: 100%;
+         		background: url(../img/img_home/bg_banner.jpg) no-repeat;
+         		height: 440px;
+         	}
+         	.home_main .home_rolling .roll_one{
+         		width: 1200px;
+         		margin: 0 auto;
+         		overflow: hidden;
+         		height: 440px;
+         		position: relative;
+         	}
+         	.home_main .home_rolling .home_roll{
+         		width: 3600px;
+         		overflow: hidden;
+         		position: absolute;
+         		left: 0;
+         		/*transition: 1s;*/
+         	}
+         	.home_main .home_rolling .home_roll li{
+         		width: 1200px;
+         		float: left;
+         	}
+         	.home_main .home_rolling .roll_span{
+         		position: absolute;
+         		bottom: 45px;
+         		right: 120px;
+         	}
+         	.home_main .home_rolling .roll_span span{
+         		display: inline-block;
+         		background: #FFF;
+         		width: 12px;
+         		height: 12px;
+         		border-radius: 50%;
+         	}
+			/*首页商品区部分*/
+         	.home_main .home_hot{
+         		width: 1200px;
+         		margin: 0 auto;
+						overflow: hidden;
+         	}
+         	.home_main .home_hot .hot_title{
+         		width: 1200px;
+         		margin: 50px auto 20px;
+         		height: 28px;
+         		background: url(../img/img_home/wrap_title-bg.png) left center no-repeat;
+         		text-align: center;
+         		font-size: 24px;
+         		line-height: 28px;
+         		font-weight: 900;
+         		font-family: "arial black";
+         	}
+			.home_main .home_hot .hot_more{
+				width: 1198px;
+				margin: 0 auto;
+				height: 44px;
+				text-align: center;
+				overflow: hidden;
+				border: 1px solid #f2f2f2;
+			}
+			.home_main .home_hot .hot_more a{
+				display: inline-block;
+				margin-top: 15px;
+				color: #aaa;
+				font-size: 14px;
+			}
+			.home_main .home_hot .hot_more a:hover{
+				color: #ff5776;
+			}
+			.home_main .home_hot .last_more{
+				margin-bottom: 200px;
+			}
+			.jumpWrap{
+				display: block;
+			}
+
+
+         </style>
+	</head>
+	<body>
+		<!--header头部固定部分-->
+		<div class="header">
+			<div class="header_count">
+					<a href="#" class="header_left">U美首页</a>
+				<div class="header_right">
+					<span><a href="ymregister.html" class="enroll">注册</a></span>
+					<span>|</span>
+					<span><a href="ymlonding.html" class="londing">登录</a></span>
+					<span>|</span>
+					<span class="down">U美手机版</span>
+					<div class="down_1">
+						<img src="../img/download6.png"/ style="padding-top: 17px;">
+						<p style="line-height: 24px;">扫一扫，下载手机客户端</p>
+					</div>
+					<span>|</span>
+					<span class="phone">联系客服：021-61520496</span>
+				</div>
+			</div>
+		</div>
+		<!--中间部分-->
+		<div class="home_main">
+			<div class="home_top">
+				<a href="index.html"><img src="../img/logo.png"/></a>
+                <span class="shanghai">上海</span>
+                <div class="home_search">
+                	     <input type="text" name="" id="top_search" value="" placeholder="美白针"/>
+                	     <button class="search-btn">搜索</button>
+                </div>
+                <a href="index.html" class="home_topr"><img src="../img/img_home/head-tips.png"/></a>
+			</div>
+			<!--首页导航条-->
+			<div class="home_nav">
+				<div class="navs">
+					<div class="home_all">全部分类</div>
+					<div class="home_nav_four">
+						<a href="index.html" class="home_page">首页</a>
+						<a href="#" class="home_serve">找服务</a>
+						<a href="#" class="home_hospital">找医院</a>
+						<a href="#" class="home_project">项目介绍</a>
+					</div>
+				</div>
+			</div>
+			<!--首页滚动图-->
+			<div class="home_rolling">
+				<div class="roll_one">
+					<ul class="home_roll">
+						<li>
+							<a target="_blank" href="ymintroduce1.html"><img src="../img/img_home/headbg_1.jpg"/></a>
+						</li>
+						<li>
+							<a target="_blank" href="ymintroduce2.html"><img src="../img/img_home/headbg_2.jpg"/></a>
+						</li>
+						<li>
+							<a target="_blank" href="ymintroduce1.html"><img src="../img/img_home/headbg_1.jpg"/></a>
+						</li>
+					</ul>
+					<div class="roll_span">
+						<span class="span1"></span>
+						<span class="span1"></span>
+					</div>
+				</div>
+			</div>
+
+			<!--首页热门项目部分-->
+			<div class="home_hot">
+				<div class="hot_title">
+					热门项目
+				</div>
+				<ul class="hot_goods"></ul>
+				<div class="hot_more">
+           <a href="#">查看更多<span style="position: relative;top:2px;">></span></a>
+				</div>
+			</div>
+			<!-- 首页特惠专区部分 -->
+			<div class="home_hot">
+				<div class="hot_title">
+					特惠专区
+				</div>
+				<ul class="prefer_goods"></ul>
+				<div class="hot_more">
+           <a href="#">查看更多<span style="position: relative;top:2px;">></span></a>
+				</div>
+			</div>
+			<!-- 首页最新上线部分 -->
+			<div class="home_hot">
+				<div class="hot_title">
+					最新上线
+				</div>
+				<ul class="new_goods"></ul>
+				<div class="hot_more last_more">
+           <a href="#">查看更多<span style="position: relative;top:2px;">></span></a>
+				</div>
+			</div>
+
+
+		</div>
+		<!--footer底部固定部分-->
+		<div class="footer">
+			<ul class="puff">
+				<li class="puff_1"><p>资质、药品、环境<br>100％实地考察</p></li>
+				<li class="puff_2"><p>我们的价格<br>别人不敢给</p></li>
+				<li class="puff_3"><p>汇聚沪上所有<br>专业美容机构资源</p></li>
+				<li class="puff_4"><p style="border-right:none ;">所有项目由平台<br>人员亲身体验</p></li>
+			</ul>
+			<div class="about">
+				<ul style="padding-bottom: 20px;">
+					<a href="#">关于我们</a>
+					<li style="display: inline;">|</li>
+					<a href="#">办公环境</a>
+					<li style="display: inline;">|</li>
+					<a href="#">联系我们</a>
+					<li style="display: inline;">|</li>
+					<a href="#">诚聘英才</a>
+					<li style="display: inline;">|</li>
+					<a href="#">相关报道</a>
+				</ul>
+				<p>热线电话：400-720-9815 地址：上海市浦东新区博成路181号（世博园卢森堡馆）</p>
+				<p>Copyright © 2014-2016 www.utouu.com, All rights reserved.UTOUU.
+					沪ICP备14043004号-1 上海悠唐网络科技有限公司 版权所有</p>
+				<p class="footer_p">悠唐软件（UTSOFT.CN）提供技术支持</p>
+				<span style="padding-right: 18px;"><img src="../img/icon_3_1.jpg"/></span>
+				<span><img src="../img/icon_1_1.jpg"/></span>
+				<div class="footer_down">
+					<img src="../img/download6.png"/>
+					<p>U美手机客户端</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/header_footer.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="../js/indexroll.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/goods_home.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		function ask(obj,callback){
+				var request = new XMLHttpRequest();
+				request.open("GET",obj.url,true)
+				request.send();
+				request.onreadystatechange = function(){
+					if (request.readyState == 4 && request.status == 200) {
+						var str = request.responseText;
+						var obj = JSON.parse(str);
+						callback(obj);
+					}
+				}
+			}
+
+			// 首页侧边查看部分
+			// ask({
+			// 	url:'',
+			// },function(obj) {
+			//
+			// })
+
+      // 热门项目
+			ask({
+			  url:'../../php/code/index.php',
+			},function(obj){
+				 var hot = $('.hot_goods');
+				 var obj1 = [];
+				 for (var i = 0; i < 8; i++) {
+				 	obj1.push(obj[i])
+				 }
+         		goods(obj,hot);
+			})
+			// 特惠专区
+			ask({
+			  url:'../../php/code/index.php',
+			},function(obj){
+				 var prefer = $('.prefer_goods');
+				 var obj1 = [];
+				 for (var i = 0; i < 4; i++) {
+				 	obj1.push(obj[i])
+				 }
+         goods(obj1,prefer);
+			})
+			// 最新上线
+			ask({
+			  url:'../../php/code/index.php',
+			},function(obj){
+				 var new1 = $('.new_goods');
+				 var obj1 = [];
+				 for (var i = 0; i < 4; i++) {
+				 	obj1.push(obj[i])
+				 }
+         	goods(obj1,new1);
+			})
+
+			var home_all = document.getElementsByClassName('home_all')[0];
+			home_all.onmouseout = null;
+
+			
+			
+
+
+
+	</script>
+</html>

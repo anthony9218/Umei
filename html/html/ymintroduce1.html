@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/swiper-3.3.1.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/ymintroduce1.css"/>
+	</head>
+	<body>
+		<div class="duce_main">
+			<div class="duce">
+				<a href="#" class="duce_logo"><img src="../img/img_introduce/login_03.png"/></a>
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li style="padding: 0 5px; top: -2px;">|</li>
+					<li><a href="#">注册</a></li>
+					<li style="padding: 0 5px; top: -2px;">|</li>
+					<li><a href="#">论坛</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide" style="background: url(../img/img_introduce/banner1.jpg);">
+		        	     <div class="sw_top1" style="background: url(../img/img_introduce/top1.png) center bottom no-repeat;"></div>
+		        </div>
+		        <div class="swiper-slide" style="background: url(../img/img_introduce/banner2.jpg);">
+		        	     <div class="sw_top1" style="background: url(../img/img_introduce/top2.png) center bottom no-repeat;"></div>
+		        </div>
+		        <div class="swiper-slide" style="background: url(../img/img_introduce/banner3.jpg);">
+		        	      <div class="sw_top1" style="background: url(../img/img_introduce/top3.png) center bottom no-repeat;"></div>
+		        	      <div id="duce_lond">
+		        	      	   <a href="ymregister.html" class="duce_ec1">我要注册</a>
+		        	      	   <a href="ymlonding.html" class="duce_ec1">加入我们</a>
+		        	      </div>
+		        </div>
+		    </div>
+		    <div class="swiper-pagination"></div>
+		</div>
+		
+	</body>
+	<script src="../js/swiper-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script language="javascript"> 
+		var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        direction: 'vertical',
+	        mousewheelControl: true,
+	        onlyExternal:true,
+      });
+
+	</script>
+</html>

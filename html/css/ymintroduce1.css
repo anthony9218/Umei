@@ -1,0 +1,84 @@
+	    *{
+		    	   margin: 0;
+		    	   padding: 0;
+		    	   list-style: none;
+		    	   text-decoration: none;
+		    }
+		   body,html{
+		   	 height: 100%;
+		   	 width: 100%;
+		   	 overflow: hidden;
+		   } 
+		   .swiper-container{
+		   	    width: 100%;
+		   	    height: 100%;
+		   }
+		   .swiper-container .swiper-pagination .swiper-pagination-bullet{
+                width: 8px;
+                height: 8px;
+                border: 1px solid #fff;
+                background: transparent;  
+                opacity: 1;
+                margin: 10px 0;
+                display: block;   
+			}
+			.swiper-container .swiper-pagination .swiper-pagination-bullet-active{
+				border: 1px solid #FF5776;
+			}
+			.duce_main{
+				width: 100%;
+				position: absolute;
+				z-index: 999;
+			}
+			.duce{
+				width: 940px;
+				height: 75px;
+				margin:0 auto;
+				overflow: hidden;
+			}
+			.duce .duce_logo{
+				width: 178px;
+				height: 75px;
+				margin-left: 4px;
+			}
+			.duce ul{
+				width: 170px;
+				float: right;
+				margin-top: 37px;
+				position: relative;
+				left: 10px;
+				font-family: arial;
+				font-weight: 100;
+			}
+			.duce ul li{
+				display: inline;
+				color: #fff;
+				font-size: 14px;
+				position: relative;
+			}
+			.duce ul li a{
+				color: #fff;
+				font-size: 16px;
+			}
+			.swiper-container .sw_top1{
+				width: 100%;
+				height: 580px;
+			}
+			.swiper-container #duce_lond{
+				width: 100%;
+				text-align: center;
+				margin-top: 100px;
+			}
+			.swiper-container #duce_lond .duce_ec1{
+				display: inline-block;
+				width: 150px;
+				height: 50px;
+				line-height: 50px;
+				border: 1px solid #fff;
+				margin: 0 20px;
+				color: #fff;
+				font-size: 18px;
+			}
+			.swiper-container #duce_lond .duce_ec1:hover{
+				background: rgba(255,255,255,0.1);
+			}
