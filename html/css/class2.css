@@ -8,7 +8,7 @@
 	width: 1200px;margin:0 auto;font-size: 12px;
 }
 #content{
-	width: 1200px;margin: 0 auto;position: relative;
+	width: 1200px;margin: 0 auto;position: relative;overflow: hidden;
 }
 .name{
 	height: 50px;line-height: 50px;padding: 0 20px;font-size: 18px;border: #f2f2f2 solid 1px;
@@ -20,6 +20,7 @@
 }
 .topBox li{
 	float: left;width: 360px;margin: 15px 0;padding-left: 40px;
+	line-height: 24px;
 }
 .topBox li:nth-child(1){
 	background: url("../img/img_class/icon1.png") left 3px no-repeat;
@@ -62,6 +63,68 @@
 #introduce #text{
 	line-height: 36px;
     padding: 30px 0 0 30px;font-size: 16px;
-    font-weight: 600;
+    font-weight: 900;
     color: #666;
+	font-family: arial;
+}
+.left{
+	float: left;width: 830px;
+}
+.right{
+	float: right;width: 224px;position: relative;
+    color: #333333;font: 14px/1.5 "Helvetica Neue","Microsoft Yahei",Helvetica,Arial,"Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.right h4{
+	line-height: 24px;position: relative;height: 24px;margin-bottom: 16px;
+}
+.right h4 em{
+	display: block;border-bottom: 1px solid #ddd;position: absolute;top: 12px;width:100%;
+}
+.right h4 span{
+	position: block;position: absolute;left: calc(50% - 82px);background: #fff;width:164px;text-align: center;color:#757575;font-weight: normal;
+}
+.right .goods{
+	border: 1px solid #f2f2f2;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+  	cursor: pointer;
+}
+.goods_img{
+  width: 222px;
+  height: 166px;
+}
+.goods_h3{
+  color: #333;
+  line-height: 46px;
+  overflow: hidden;
+  font-size: 16px;
+  padding: 0 20px;
+  width: 182px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.goods_hospital{
+  font-size: 14px;
+  color: #aaa;
+  padding: 0 20px;
+  margin-bottom: 16px;
+  line-height: 18px;
+  height: 24px;font-weight: 500;
+}
+.goods_money{
+  font-size: 12px;
+  color: #aaa;
+  padding:0 20px;
+  line-height: 18px;
+}
+.goods_vip{
+  font-size: 20px;
+  color: #ff5566;
+  font-family: "arial";
+}
+.goods_cost{
+  margin-left: 12px;text-decoration:line-through;
+}
+.goods:hover{
+  border-color: #ff5566
 }

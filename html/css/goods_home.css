@@ -9,6 +9,10 @@
   overflow: hidden;
   font-size: 18px;
   padding: 5px 0 0 20px;
+  width: 270px;
+  height: 40px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .goods_hospital{
   font-size: 14px;
@@ -29,7 +33,7 @@
   font-family: "arial";
 }
 .goods_cost{
-  margin-left: 12px
+  margin-left: 12px;text-decoration: line-through;font-family: arial;
 }
 .goods{
   position: relative;
@@ -43,6 +47,9 @@
   margin-right: 0;
 }
 .goods:nth-child(8){
+  margin-right: 0;
+}
+.goods:nth-child(12){
   margin-right: 0;
 }
 .goods:hover{

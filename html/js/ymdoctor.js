@@ -10,11 +10,18 @@
 					}
 				}
 			}
+			function getvl(name) {
+		      var reg = new RegExp("(^|\\?|&)" + name + "=([^&]*)(\\s|&|$)", "i");
+		      if (reg.test(location.href)) return decodeURI(RegExp.$2.replace(/\+/g," "));
+		      return "";
+	      };
+			getvl('oid')
+			var aa = getvl('oid');
 			ask({
-			  url:'../../php/code/doctor.php',
+			  url:'../../php/code/doctor.php?id='+aa,
 			},function(obj){
 				console.log(obj)
-				var obj1 = obj[13]
+				var obj1 = obj[0]
 				var doctor = $(".doctor");
 				var left = $("<div/>");
 				left.addClass("left");
@@ -63,7 +70,7 @@
 				var navspan1 = $("<div>")
 				navspan1.text(obj1.doctor_name)
 				navspan1.css({
-					fontSize: "16px",fontWeight: "600",color:" #333"
+					fontS7ize: "16px",fontWeight: "600",color:" #333"
 				})
 				var navspan2 = $("<div>")
 				navspan2.text(obj1.doctor_job)
@@ -84,7 +91,7 @@
 				function getPoint(obj) {
 				    var l = obj.offsetTop;
 				    while (obj = obj.offsetParent) {
-				        l += obj.offsetTop; 
+				        l += obj.offsetTop;
 				    }
 				   return l
 				}
@@ -92,10 +99,7 @@
 				var question1 = document.querySelector(".question1")
 				var navTop = getPoint(doctorNav);
 				function judgeP(){
-					var top = $("html,body").scrollTop()
-					if (top == 0) {
-						top = document.body.scrollTop
-					};
+					01014
 					if (top >= navTop) {
 						doctorNav.className = "doctorNavF"
 						question1.style.transform = "scale(1)"
@@ -110,8 +114,6 @@
 				}
 
 
-				
-			
-			})
-		          
 
+
+			})

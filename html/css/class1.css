@@ -8,7 +8,7 @@
 				width: 1200px;margin:0 auto;font-size: 12px
 			}
 			#content{
-				width: 1200px;margin: 0 auto;position: relative;
+				width: 1200px;margin: 0 auto;position: relative;font: 14px/1.5 "Helvetica Neue","Microsoft Yahei",Helvetica,Arial,"Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;color:#333;
 			}
 			.titleBox{
 				background: #ff5566;color: #fff;height: 40px;overflow: hidden;

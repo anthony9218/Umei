@@ -1,7 +1,9 @@
 function goods(obj1,hot){
+  // console.log(obj1);
   for (var i = 0; i < obj1.length; i++) {
     var li = $('<li>');
     li.addClass('goods');
+    li.attr('index',i)
     li.css({
       border:'1px solid #f2f2f2',
       width:'281px',
@@ -17,8 +19,18 @@ function goods(obj1,hot){
     li.append(h3);
     var h4 = $('<h4>');
     h4.addClass('goods_hospital');
+    // h4.text(obj1[i].hospital_id);
     h4.text(obj1[i].hospital_id);
     li.append(h4);
+      // 商品上的医院名称
+      ask({
+        url:'../../php/code/goods_hospital.php?id='+obj1[i].hospital_id,
+      },function(h_t){
+        var h44 = $('.goods_hospital');
+        for (var i = 0; i < h44.length; i++) {
+          h44[i].innerHTML = h_t[0].hospital_title;
+        }
+      })
     var p = $('<p>');
     p.addClass('goods_money');
     li.append(p);

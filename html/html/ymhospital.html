@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<title>U美，让你好看</title>
     <link rel="stylesheet" type="text/css" href="../css/heater_footer.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/goods_home.css"/>
     <style media="screen">
       .main_bg{
         width: 100%;
@@ -19,8 +20,6 @@
         padding: 50px 60px;
         overflow: hidden;
         position: relative;
-        /*position: relative;
-        position: absolute;*/
       }
       .main_bg .pp p{
         line-height: 25px;
@@ -40,12 +39,19 @@
         position: absolute;
         right: 250px;
         top: 135px;
+				cursor: pointer;
       }
+			.main_bg .houN{
+				width: 1180px;
+				height: 50px;
+				margin: 0 auto;
+				padding: 15px 10px;
+			}
       .main_bg .inter_nav{
         width: 1180px;
         height: 50px;
         margin: 0 auto;
-        padding: 15px 10px;
+				position: relative;
       }
       .main_bg .inter_nav ul{
         display: inline-block;
@@ -66,6 +72,27 @@
 				outline: none;
       }
       .main_bg .inter_nav ul a:hover{
+        color: #ff5566;
+      }
+			.main_bg .houN1 ul{
+        display: inline-block;
+      }
+      .main_bg .houN1 ul li{
+        display: inline-block;
+        color: #e5e5e5;
+        margin: 0 20px;
+      }
+      .main_bg .houN1 ul a{
+        display: inline-block;
+        line-height: 45px;
+        font-size: 18px;
+        color: #666;
+        font-weight: 900;
+        font-family: Arial;
+        transition: 0.1s;
+				outline: none;
+      }
+      .main_bg .houN1 ul a:hover{
         color: #ff5566;
       }
 			/*医院概述部分*/
@@ -97,6 +124,8 @@
 				width: 1200px;
         margin: 0 auto;
 				margin-bottom: 22px;
+				overflow: hidden;
+				margin-bottom: 50px;
 			}
 			.main_bg .hos_phy .phy_two{
 				width: 1200px;
@@ -111,16 +140,53 @@
 				font-weight: 900;
 				color: #333;
 			}
+			.main_bg .hos_phy .doc{
+				width: 198px;
+				height: 268px;
+				border: 1px solid #e5e5e5;
+				float: left;
+				margin-left: 33px;
+				margin-top: 33px;
+				text-align: center;
+				position: relative;
+				cursor: pointer;
+			}
+			.main_bg .hos_phy .doc:hover{
+				border-color: #ff5566;
+			}
+			.main_bg .hos_phy .docimg{
+				width: 120px;
+				height: 120px;
+				border-radius: 50%;
+				margin: 30px 40px 20px 40px;
+			}
+			.main_bg .hos_phy .hover{
+				position: absolute;
+				bottom: 0;
+				width: 176px;
+				height: 94px;
+				padding: 10px 11px;
+				background: rgba(255,85,102,0.9);
+				color: #fff;
+				font-size: 14px;
+				text-align: left;
+				line-height: 26px;
+				display: none;
+			}
+			/////////////////////////////////////////////////////////////////////
 			/*服务项目部分*/
 			.main_bg .hos_give{
 				width: 1200px;
         margin: 0 auto;
 				margin-bottom: 22px;
+				overflow: hidden;
 			}
 			.main_bg .hos_give .give_three{
 				width: 1200px;
 				height: 50px;
+				margin: 0 auto;
 				border-bottom: 2px solid #e5e5e5;
+				margin-bottom: 30px
 			}
 			.main_bg .hos_give .give_three span{
 				font-size: 20px;
@@ -130,11 +196,60 @@
 				font-weight: 900;
 				color: #333;
 			}
+			.main_bg .hos_give .give1{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.main_bg .hos_give .g_down{
+				width: 1200px;
+				height: 55px;
+				margin: 0 auto;
+				border-top: 1px solid #e5e5e5;
+				overflow: hidden;
+				text-align: center;
+				font-size: 14px;
+				margin-bottom: 400px;
+			}
+			.main_bg .hos_give .g_down .a_prev,.a_next{
+				width: 58px;
+				height: 25px;
+				display: inline-block;
+				border: 1px solid #e5e5e5;
+				line-height: 25px;
+				margin: 0 5px;
+				margin-top: 15px;
+				cursor: pointer;
+				color: #333;
+				position: relative;
+			}
+			.main_bg .hos_give .g_down .a_prev:hover{
+				color: #ff3366;
+        border: 1px solid #ff3366;
+			}
+			.main_bg .hos_give .g_down .a_next:hover{
+				color: #ff3366;
+        border: 1px solid #ff3366;
+			}
+			.main_bg .hos_give .aye{
+				display: inline-block;
+				line-height: 25px;
+				margin: 0 5px;
+				margin-top: 15px;
+				cursor: pointer;
+				color: #333;
+				padding: 0 8px;
+			}
+			.main_bg .hos_give .aye:nth-child(2){
+				background: #ff5566;
+				color: #fff;
+			}
+
+
+
+			////////////////////////////////////////////////////////////////////////
 			/*js内部创建标签样式*/
 			.main_bg .logo_img{
-				display:inline-block;
 				width:250px;
-				float:left;
 			}
 			.main_bg .imglo{
 	        width:200px;
@@ -143,8 +258,8 @@
 			}
 			.main_bg .img_um{
           position:absolute;
-          left:210px;
-          top:2px;
+          right:200px;
+          top:3px;
       }
 			.main_bg .inter3{
 	        width:390px;
@@ -181,6 +296,62 @@
         float:left;
         margin-right:12px;
       }
+			.main_bg .sumbg{
+					width:1030px;
+					height:592px;
+					margin:40px auto 20px;
+					position: relative;
+			}
+			.main_bg .sumbg .next{
+				width: 41px;
+				height: 76px;
+				background: url(../img/img_hospital/next.png);
+				position: absolute;
+				right: 60px;
+				top: 40%;
+				cursor: pointer;
+			}
+			.main_bg .sumbg .next:hover{
+				background: url(../img/img_hospital/next1.png);
+			}
+			.main_bg .sumbg .prev{
+				width: 41px;
+				height: 76px;
+				background: url(../img/img_hospital/prev.png);
+				position: absolute;
+				left: 60px;
+				top: 40%;
+				cursor: pointer;
+			}
+			.main_bg .sumbg .prev:hover{
+				background: url(../img/img_hospital/prev1.png);
+			}
+
+
+      /*滚动时导航条部分*/
+			.houN1{
+					position:fixed;
+					border-bottom:1px solid #f2f2f2;
+					width: 100%;
+					left: 0;top: 0;
+					background: #fff;
+					padding:15px 10px;
+					overflow: hidden;
+					z-index: 999;
+			}
+			.px{
+				display:inline-block;
+				width:28px;
+				height:28px;
+				margin:15px;
+				font-weight:900;
+				cursor:pointer;
+				opacity: 0.5;
+				transition:0.2s;
+			}
+			.px:hover{
+				 opacity: 1;
+			}
 
 
 
@@ -234,18 +405,21 @@
            <div class="oall">
               <a href="#" class="consult">咨询</a>
            </div>
-           <div class="inter_nav">
-                <ul>
-                  <a href="#s_o" name="s_o">医院概述</a>
-                  <li>|</li>
-                  <a href="#p_o" name="p_o">医师团队</a>
-                  <li>|</li>
-                  <a href="#g_o" name="g_o">服务项目</a>
-                </ul>
-           </div>
+					 <div class="houN">
+						 <div class="inter_nav">
+ 								<ul>
+ 									<a href="#s_o" name="s_o">医院概述</a>
+ 									<li>|</li>
+ 									<a href="#p_o" name="p_o">医师团队</a>
+ 									<li>|</li>
+ 									<a href="#g_o" name="g_o">服务项目</a>
+ 								</ul>
+ 						</div>
+					 </div>
+
            <!-- 医院概述部分 -->
            <div class="hos_sum">
-                <div class="sum_one" name = "s_o">
+                <div class="sum_one" id="s_o">
 									<span>医院概述</span>
 								</div>
 								<div class="sum1">
@@ -254,7 +428,7 @@
            </div>
 					 <!-- 医师团队 -->
 					 <div class="hos_phy">
-                <div class="phy_two" name = "p_o">
+                <div class="phy_two" id="p_o">
 									<span>医师团队</span>
 								</div>
 								<div class="phy1">
@@ -263,10 +437,13 @@
            </div>
 					 <!-- 服务项目 -->
 					 <div class="hos_give">
-                <div class="give_three" name = "g_o">
+                <div class="give_three" id="g_o">
 									<span>服务项目</span>
 								</div>
 								<div class="give1">
+
+								</div>
+								<div class="g_down">
 
 								</div>
            </div>
@@ -321,12 +498,25 @@
       }
     }
 
+		function getvl(name) {
+			var reg = new RegExp("(^|\\?|&)" + name + "=([^&]*)(\\s|&|$)", "i");
+			if (reg.test(location.href)) return decodeURI(RegExp.$2.replace(/\+/g," "));
+			return "";
+		};
+		getvl('id')
+		var aa = getvl('id');
+    console.log(aa);
     ask({
-      url:'../../php/code/hospital.php',
+      url:'../../php/code/hospital_1.php?id='+aa,
     },function(obj) {
       console.log(obj);
       var oall = $('.oall');
       var logo_img = $('<span>');
+			logo_img.css({
+				display:'inline-block',
+				float:'left',
+				width:'250px',
+			})
 			logo_img.addClass('logo_img');
       oall.append(logo_img);
       var imglo = $("<img src="+"../img/img_hospital/"+obj[0].hospital_img+">");
@@ -396,6 +586,7 @@
 			var sum1 = $('.sum1');
 			sum1.css({
 			   overflow:'hidden',
+				 marginBottom:'60px',
 			})
 			var sump = $('<div>');
 			var off = JSON.parse(obj[0].hospital_official);
@@ -419,11 +610,7 @@
 			})
 			sum1.append(sumul);
 			var sumbg = $('<div>');
-			sumbg.css({
-				width:'1030px',
-				height:'592px',
-				margin:'40px auto 20px',
-			})
+			sumbg.addClass('sumbg');
 			sumul.append(sumbg)
 			var imgbg1 = $('<div>')
 			imgbg1.css({
@@ -445,6 +632,7 @@
 			})
 			bgimg2.addClass('bgimg1');
 			imgbg1.append(bgimg2);
+			var arrpn = [];
 			for (var i = 0; i < oimg.length; i++) {
 				var sumli = $('<li>');
 				sumli.css({
@@ -457,8 +645,10 @@
 					width:'182px',
 					height:'132px',
 				})
+				sumimg.attr('index',i);//////////
 				sumimg.addClass('sumimg');
 				sumli.append(sumimg);
+				arrpn.push(sumimg);
 				var sumimg1 = $('.sumimg');
 				$(sumimg1[0]).css({
 					border:'2px solid #ff5566',
@@ -473,6 +663,7 @@
 							border:'none',
 						})
 					}
+					sss = $(this).attr('index')
 					$(this).css({
 						border:'2px solid #ff5566',
 						width:'178px',
@@ -501,11 +692,424 @@
 						})
 					},50)
 				})
-				// 点击结束
+				// 点击图片结束
 			}
 			// 左右点击效果
 			    // 下一张的创建
       var next = $('<div>');
+			next.addClass('next');
+			sumbg.append(next)
+			console.log(arrpn);
+			var sss = 0;
+			next.on('click',function(){
+				for (var j = 0; j < oimg.length; j++) {
+					$(sumimg1[j]).css({
+						width:'182px',
+						height:'132px',
+						border:'none',
+					})
+				}
+				if (sss < arrpn.length) {
+					sss++;
+					if (sss == arrpn.length) {
+						 sss = arrpn.length - 1;
+					}
+					$(sumimg1[sss]).css({
+						border:'2px solid #ff5566',
+						width:'178px',
+						height:'128px',
+					})
+					var bgimg1 = $('.bgimg1');
+					for (var g = 0; g < bgimg1.length; g++) {
+						 bgimg1[g].remove();
+					}
+					var bgimg = $('<img src='+arrpn[sss].attr("src")+'>')
+				}else {
+					return;
+				}
+				bgimg.addClass('bgimg1');
+				bgimg.css({
+						position: 'absolute',
+						top:'0',
+						left:'0',
+						width:'700px',
+						height:'525px',
+						opacity:'0.3',
+						transition:'0.7s',
+				})
+				imgbg1.append(bgimg);
+				var bgimg1 = $('.bgimg1')
+				setInterval(function(){
+					$(bgimg1[0]).css({
+						opacity: '1',
+					})
+				},50)
+
+			})
+			    // 上一张的创建
+		  var prev = $('<div>')
+			prev.addClass('prev');
+			sumbg.append(prev);
+			prev.on('click',function(){
+				if (sss > 0) {
+					for (var j = 0; j < oimg.length; j++) {
+						$(sumimg1[j]).css({
+							width:'182px',
+							height:'132px',
+							border:'none',
+						})
+					}
+				}
+				if (sss > 0) {
+					sss--;
+					var bgimg1 = $('.bgimg1');
+					for (var g = 0; g < bgimg1.length; g++) {
+						 bgimg1[g].remove();
+					}
+					var bgimg = $('<img src='+arrpn[sss].attr("src")+'>')
+					$(sumimg1[sss]).css({
+						border:'2px solid #ff5566',
+						width:'178px',
+						height:'128px',
+					})
+				}else {
+					return;
+				}
+				bgimg.addClass('bgimg1');
+				bgimg.css({
+						position: 'absolute',
+						top:'0',
+						left:'0',
+						width:'700px',
+						height:'525px',
+						opacity:'0.3',
+						transition:'0.7s',
+				})
+				imgbg1.append(bgimg);
+				var bgimg1 = $('.bgimg1')
+				setInterval(function(){
+					$(bgimg1[0]).css({
+						opacity: '1',
+					})
+				},50)
+			})
+
+			// 医师团队
+			ask({
+				url:'../../php/code/hospital_doctor.php?id='+obj[0].hospital_id,
+			},function(dobj){
+				console.log(dobj);
+				var phy1 = $('.phy1');
+				for (var i = 0; i < dobj.length; i++) {
+            var doc = $('<div>');
+						doc.attr('index',i)
+						//////////////////////////////////////
+						doc.on('click',function(){
+							console.log(dobj[$(this).attr('index')].doctor_id);
+							window.open('ymdoctor.html?oid='+dobj[$(this).attr('index')].doctor_id)
+						})
+						/////////////////////////////////////
+						doc.addClass('doc');
+						doc.attr('index',i)
+            phy1.append(doc);
+						var docimg = $('<img src='+'../img/img_doctor/'+dobj[i].doctor_img+'>')
+						docimg.addClass('docimg')
+						doc.append(docimg)
+						var h3 = $('<h3>');
+						h3.text(dobj[i].doctor_name);
+						doc.append(h3);
+						var p = $('<p>')
+						p.text(dobj[i].doctor_job)
+						p.css({
+							fontSize:'14px',
+							color:'#999',
+							marginTop:'5px',
+						})
+						doc.append(p)
+						var hover = $('<div>')
+						hover.addClass('hover');
+						doc.append(hover)
+						hover.text('擅长项目：'+dobj[i].doctor_skilled)
+						var hover = $('.hover')
+						doc.on('mouseover',function(){
+							$(hover[$(this).attr('index')]).css({
+								display:'block',
+							})
+						})
+						doc.on('mouseout',function(){
+							$(hover[$(this).attr('index')]).css({
+								display:'none',
+							})
+						})
+				}
+			})
+
+			// 服务项目
+			ask({
+				url:'../../php/code/hospital_goods.php?id='+obj[0].hospital_id,
+			},function(obj){
+				console.log(obj);
+				var give1 = $('.give1');
+				if (obj.length == 0) {
+					 var zhanwu = $('<div>')
+					 zhanwu.css({
+						 width:'1198px',
+						 height:'150px',
+						 border:'1px solid #e5e5e5',
+						 background:'url(../img/null-icon.png) 400px center no-repeat',
+						 textAlign:'center',
+					 })
+					 var p = $('<p>');
+					 p.text('暂无产品，去其他地方看看吧！')
+					 p.css({
+						 lineHeight:'150px',
+					 })
+					 zhanwu.append(p);
+					 give1.append(zhanwu);
+				}else {
+					var obj1 = [];
+					// for (var i = 0; i < obj.length; i++) {
+					//  obj1.push(obj[i])
+					// }
+					var arr1 = obj.slice(ss*8)
+					var a = 8;
+					if (arr1.length < 8) {
+						 a = arr1.length
+					}
+					for (var i = 0; i < a; i++) {
+	            obj1.push(arr1[i])
+					}
+					console.log(obj1);
+					goods(obj1,give1);
+					// 下部分页部分
+					var g_down = $('.g_down');
+					    // 上一页
+					var a_prev = $('<a/>')
+					a_prev.text('上一页');
+					a_prev.addClass('a_prev');
+					g_down.append(a_prev);
+					a_prev.on('click',function(){
+						  (function(){
+								var goods = $('.goods');
+								goods.remove();
+							  console.log(goods);
+							})();
+	             ss--;
+							 console.log(ss);
+							 var arr1 = obj.slice(ss*8)
+							 console.log(arr1);
+							 var pa = [];
+							 for (var i = 0; i < arr1.length; i++) {
+							 	   pa.push(arr1[i])
+							 }
+							 var b = 8;
+							 if (pa.length < 8) {
+							 	   b = pa.length;
+							 }
+							 var par = [];
+							 for (var i = 0; i < b; i++) {
+	                 par.push(pa[i]);
+							 }
+							 var aye = $('.aye');////////////////////////////
+							 for (var i = 0; i < aye.length; i++) {
+									$(aye[i]).css({
+										background:'#fff',
+										color:'#333',
+									})
+							 }
+							 $(aye[ss]).css({
+								 background:'#ff5566',
+								 color:'#fff',
+							 })
+							 if (ss == 0) {
+								 var dxia = $('.dxia');
+								 dxia.remove();
+								 E();
+							 }
+							 if (ss <= ye-1) {
+								 var dxia = $('.dxia');
+								 dxia.remove();
+							 }
+							 goods(par,give1);
+					})
+					var ye = Math.ceil(obj.length/8)
+					// 中间页数
+					console.log(ye);
+					for (var i = 0; i < ye; i++) {
+						  var aye = $('<a>');
+							aye.addClass('aye');
+							aye.text(i+1);
+							aye.attr('index',i)
+							g_down.append(aye);
+							aye.on('click',function(){
+								(function(){
+									var goods = $('.goods');
+									goods.remove()
+								  console.log(goods);
+								})();
+								var aye = $('.aye');
+								for (var i = 0; i < aye.length; i++) {
+									 $(aye[i]).css({
+										 background:'#fff',
+										 color:'#333',
+									 })
+								}
+	               ss = $(this).attr('index');
+								 $(this).css({
+									 background:'#ff5566',
+									 color:'#fff',
+								 })
+								 console.log(ss);
+								 var arr1 = obj.slice(ss*8)
+								 var na = [];
+								 for (var i = 0; i < arr1.length; i++) {
+								 	   na.push(arr1[i])
+								 }
+								 var c = 8;
+								 if (na.length < 8) {
+								 	   c = na.length;
+								 }
+								 var nar = [];
+								 for (var i = 0; i < c; i++) {
+		                 nar.push(na[i]);
+								 }
+								 goods(nar,give1);
+								 ///////////////////////////
+								 if (ss > 0) {
+									var eshang = $('.eshang');
+									eshang.remove();
+									}
+									if (ss <= ye-1) {
+									 var dxia = $('.dxia');
+									 dxia.remove();
+								 }
+									 if (ss == ye-1) {
+										var eshang = $('.eshang');
+	 								  eshang.remove();
+		 								D();
+		 							}
+										if (ss == 0) {
+										 var dxia = $('.dxia');
+										 dxia.remove();
+										 E();
+									 }
+
+							})
+					}
+					    // 下一页
+					var a_next = $("<a>")
+					a_next.text('下一页');
+					a_next.addClass('a_next');
+					g_down.append(a_next);
+					var ss = 0;
+					console.log(ye);
+					if (ss < ye) {
+						a_next.on('click',function(){
+							  (function(){
+									var goods = $('.goods');
+									goods.remove()
+								  console.log(goods);
+								})();
+		             ss++;
+								 console.log(ye)
+								 console.log(ss);
+								 var arr1 = obj.slice(ss*8)
+								 var na = [];
+								 for (var i = 0; i < arr1.length; i++) {
+								 	   na.push(arr1[i])
+								 }
+								 var c = 8;
+								 if (na.length < 8) {
+								 	   c = na.length;
+								 }
+								 var nar = [];
+								 for (var i = 0; i < c; i++) {
+		                 nar.push(na[i]);
+								 }
+								 goods(nar,give1);
+								var aye = $('.aye');////////////////////////////
+	 							for (var i = 0; i < aye.length; i++) {
+	 								 $(aye[i]).css({
+	 									 background:'#fff',
+	 									 color:'#333',
+	 								 })
+	 							}
+								$(aye[ss]).css({
+									background:'#ff5566',
+									color:'#fff',
+								})
+								if (ss == ye-1) {
+									var eshang = $('.eshang');
+									eshang.remove();
+									D();
+								}
+								if (ss > 0) {
+									var eshang = $('.eshang');
+									eshang.remove();
+								}
+						})
+				}
+
+					////////////////
+					function D(){
+						var d = $('<div>')
+						d.addClass('dxia')
+						d.css({
+							width:'60px',
+							height:'28px',
+							position:'absolute',
+							top:'-1px',
+							left:'-1px',
+							lineHeight:'27px',
+							background:'#e5e5e5',
+							cursor: 'not-allowed',
+							color:'#fff'
+						})
+						d.text('下一页')
+						d.on('click',function(e){
+							if(e && e.stopPropagation){
+								e.stopPropagation();
+								}else{
+								window.event.cancelBubble = true;
+							}
+						})
+						a_next.append(d)
+					}
+					function E(){
+						var d = $('<div>')
+						d.addClass('eshang')
+						d.text('上一页')
+						d.css({
+							width:'60px',
+							height:'28px',
+							position:'absolute',
+							top:'-1px',
+							left:'-1px',
+							lineHeight:'27px',
+							background:'#e5e5e5',
+							cursor: 'not-allowed',
+							color:'#fff'
+						})
+						d.on('click',function(e){
+							if(e && e.stopPropagation){
+								//W3C取消冒泡事件
+								e.stopPropagation();
+								}else{
+								//IE取消冒泡事件
+								window.event.cancelBubble = true;
+							}
+						})
+						a_prev.append(d)
+					}
+					//////////////////////////////////
+				}
+
+			})
+
+
+
+
+
 
 
     })
@@ -516,5 +1120,68 @@
 
 
 
+
+
+
+
+
+// 页面Fixed部分
+   function Fixed(){
+
+		 function getPoint(obj) {
+ 					var l = obj.offsetTop;
+ 					while (obj = obj.offsetParent) {
+ 							l += obj.offsetTop;
+ 					}
+ 				 return l
+ 			}
+ 			var houN = document.querySelector(".houN")
+			var inter_nav = $(".inter_nav")
+ 			var navTop = getPoint(houN)
+			var zixun = $('<a>')
+			zixun.text('咨询')
+			zixun.css({
+				top:'-3px',
+				right:'50px',
+				transform :"scale(0)",
+				transition:'0.5s'
+			})
+			zixun.addClass('consult')
+			inter_nav.append(zixun);
+ 			function judgeP(){
+				var top = $("html,body").scrollTop()
+	 			if (top == 0) {
+	 					top = document.body.scrollTop
+	 			};
+ 				if (top >= navTop) {
+ 					houN.className = "houN1"
+					zixun.css({
+						transform :"scale(1)",
+						right:'130px',
+					})
+ 				}else{
+ 					houN.className = "houN"
+					zixun.css({
+						transform :"scale(0)",
+						right:'50px',
+					})
+ 				}
+ 			}
+ 			judgeP()
+ 			window.onscroll = function(){
+ 				judgeP()
+ 			}
+	 }
+	Fixed()
+
+
+
+
+
+
+
+
   </script>
+	<script src="../js/consult.js" charset="utf-8"></script>
+	<script src="../js/goods_home.js" type="text/javascript" charset="utf-8"></script>
 </html>

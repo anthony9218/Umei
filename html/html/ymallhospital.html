@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>U美，让你好看</title>
+     <link rel="stylesheet" type="text/css" href="../css/heater_footer.css"/>
+		 <meta name="viewport" content="width=device-width,initial-scale=0.1,minimum-scale=0.3,maximum-scale=0.7,user-scalable=yes" />
+      <style media="screen">
+         .allh_one{
+         	   width: 100%;
+						 height: 40px;
+						 background: #f5f5f5;
+         }
+				 .one_zhao{
+				 	   width: 1200px;
+						 height: 40px;
+						 line-height: 40px;
+						 margin: 0 auto;
+						 font-size: 12px;
+						 color: #333;
+				 }
+				 .allh2{
+				 	   width: 1198px;
+						 height: 100px;
+						 border: 1px solid #f2f2f2;
+						 margin: 30px auto 20px;
+						 font-size: 14px;
+						 color: #999;
+				 }
+				 p{
+				 	  line-height: 24px;
+				 }
+
+      </style>
+	</head>
+	<body>
+		<!--header头部固定部分-->
+		<div class="header">
+			<div class="header_count">
+					<a href="#" class="header_left">U美首页</a>
+				<div class="header_right">
+					<span><a href="ymregister.html" class="enroll">注册</a></span>
+					<span>|</span>
+					<span><a href="ymlonding.html" class="londing">登录</a></span>
+					<span>|</span>
+					<span class="down">U美手机版</span>
+					<div class="down_1">
+						<img src="../img/download6.png"/ style="padding-top: 17px;">
+						<p style="line-height: 24px;">扫一扫，下载手机客户端</p>
+					</div>
+					<span>|</span>
+					<span class="phone">联系客服：021-61520496</span>
+				</div>
+			</div>
+		</div>
+		<!--中间部分-->
+		<div class="home_main">
+			<div class="home_top">
+				<a href="index.html"><img src="../img/logo.png"/></a>
+                <span class="shanghai">上海</span>
+                <div class="home_search">
+                	     <input type="text" name="" id="top_search" value="" placeholder="美白针"/>
+                	     <button class="search-btn">搜索</button>
+                </div>
+                <a href="index.html" class="home_topr"><img src="../img/img_home/head-tips.png"/></a>
+			</div>
+			<!--首页导航条-->
+			<div class="home_nav">
+				<div class="navs">
+					<div class="home_all">全部分类</div>
+					<div class="home_nav_four">
+						<a href="index.html" class="home_page">首页</a>
+						<a href="#" class="home_serve">找服务</a>
+						<a href="#" class="home_hospital" style="background:#e54c5c;">找医院</a>
+						<a href="#" class="home_project">项目介绍</a>
+					</div>
+				</div>
+			 </div>
+      <!-- 中间下边部分 -->
+	      <div class="allh_one">
+	      	  <div class="one_zhao">
+							  <a href="#">首页</a> / 找医院
+	      	  </div>
+	      </div>
+				<div class="allh2">
+
+				</div>
+				<div class="all_hos">
+
+				</div>
+
+
+		</div>
+		<!--footer底部固定部分-->
+		<div class="footer">
+			<ul class="puff">
+				<li class="puff_1"><p>资质、药品、环境<br>100％实地考察</p></li>
+				<li class="puff_2"><p>我们的价格<br>别人不敢给</p></li>
+				<li class="puff_3"><p>汇聚沪上所有<br>专业美容机构资源</p></li>
+				<li class="puff_4"><p style="border-right:none ;">所有项目由平台<br>人员亲身体验</p></li>
+			</ul>
+			<div class="about">
+				<ul style="padding-bottom: 20px;">
+					<a href="#">关于我们</a>
+					<li style="display: inline;">|</li>
+					<a href="#">办公环境</a>
+					<li style="display: inline;">|</li>
+					<a href="#">联系我们</a>
+					<li style="display: inline;">|</li>
+					<a href="#">诚聘英才</a>
+					<li style="display: inline;">|</li>
+					<a href="#">相关报道</a>
+				</ul>
+				<p>热线电话：400-720-9815 地址：上海市浦东新区博成路181号（世博园卢森堡馆）</p>
+				<p>Copyright © 2014-2016 www.utouu.com, All rights reserved.UTOUU.
+					沪ICP备14043004号-1 上海悠唐网络科技有限公司 版权所有</p>
+				<p class="footer_p">悠唐软件（UTSOFT.CN）提供技术支持</p>
+				<span style="padding-right: 18px;"><img src="../img/icon_3_1.jpg"/></span>
+				<span><img src="../img/icon_1_1.jpg"/></span>
+				<div class="footer_down">
+					<img src="../img/download6.png"/>
+					<p>U美手机客户端</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/header_footer.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		function ask(obj,callback){
+				var request = new XMLHttpRequest();
+				request.open("GET",obj.url,true)
+				request.send();
+				request.onreadystatechange = function(){
+					if (request.readyState == 4 && request.status == 200) {
+						var str = request.responseText;
+						var obj = JSON.parse(str);
+						callback(obj);
+					}
+				}
+			}
+			// 创建地区 和 部位
+			function CJ(){
+					var allh2 = $('.allh2')
+					// 建立地区
+					var areaArr = ['不限','徐汇区','长宁区','闸北区','静安区','黄浦区'];
+					var partArr = ['不限','口腔美容','毛发','鼻部','皮肤','身体塑形','面部轮廓','眼眉整形'];
+					var p1 = $('<p>');
+					p1.css({
+						width:'1160px',
+						height:'45px',
+						marginTop:'10px',
+						lineHeight:'45px',
+						padding:'0 20px',
+					})
+					p1.text('地区 ');
+					var span1 = $('<span>')
+					span1.css({
+						display:'inline-block',
+						width:'15px',
+					})
+					allh2.append(p1);
+					p1.append(span1)
+					var p2 = $('<p>');
+					p2.css({
+						width:'1200px',
+						height:'45px',
+						lineHeight:'45px',
+						padding:'0 20px',
+					})
+					p2.text('部位 ');
+					var span2 = $('<span>')
+					span2.css({
+						display:'inline-block',
+						width:'15px',
+					})
+					allh2.append(p2);
+					p2.append(span2)
+				  // 创建a标签 添加地区
+					for (var i = 0; i < areaArr.length; i++) {
+						  var aArea = $('<a>');
+							aArea.text(areaArr[i]);
+							aArea.css({
+								fontFamily:'arial',
+								fontWeight:'900',
+								margin:'0 10px'
+							})
+							p1.append(aArea);
+					}
+					// 创建a标签 添加部位
+					for (var i = 0; i < partArr.length; i++) {
+						  var aPart = $('<a>');
+							aPart.text(partArr[i]);
+							aPart.css({
+								fontFamily:'arial',
+								fontWeight:'900',
+								margin:'0 10px'
+							})
+							p2.append(aPart);
+					}
+			}
+      CJ();
+
+			ask({
+				url:'../../php/code/hospital.php',
+			},function(obj){
+	       console.log(obj);
+				 var all_hos = $('.all_hos');
+				 for (var i = 0; i < obj.length; i++) {
+				 	  var bigdiv = $('<div>');
+						bigdiv.css({
+							width:'1140px',
+							margin:'0 auto',
+							overflow:'hidden',
+							border:'1px solid #f2f2f2',
+							padding:'30px',
+							marginBottom:'30px',
+						})
+						all_hos.append(bigdiv);
+						var bigtop = $('<div>');
+						bigtop.css({
+							position:'relative',
+						})
+						bigdiv.append(bigtop);
+						var logo_img = $('<span>');
+						logo_img.css({
+							display:'inline-block',
+							float:'left',
+							width:'250px',
+						})
+			      bigtop.append(logo_img);
+			      var imglo = $("<img src="+"../img/img_hospital/"+obj[i].hospital_img+">");
+						imglo.css({
+							width:'200px',
+							height:'200px',
+							borderRadius:'50%',
+						})
+			      logo_img.append(imglo);
+						// 医院名称部分
+						var odiv = $('<div>');
+						odiv.css({
+                paddingTop:'20px',
+								width:'380px',
+								height:'219px',
+								position:'relative',
+								float:'left',
+								color:'#999',
+								overflow:'hidden',
+								fontSize:'14px',
+								fontFamily:'arial',
+						})
+						bigtop.append(odiv);
+						var h2 = $('<h2>');
+						h2.text(obj[i].hospital_title);
+						h2.css({
+							color:'#333',
+							fontSize:'20px',
+							float:'left',
+							cursor:'pointer',
+						})
+						h2.attr('index',obj[i].hospital_id)
+						h2.on('click',function(){
+							console.log($(this).attr('index'));
+               window.open('ymhospital.html?id='+ $(this).attr('index'))
+						})
+						odiv.append(h2);
+						var img_um = $('<img src="../img/tag-icon.png">');
+						img_um.css({
+							float:'left',
+							marginLeft:'8px',
+						})
+						odiv.append(img_um)
+						// var starnum = $('<div>');
+						// starnum.text(obj[i].hospital_star);
+						// starnum.css({
+						// 	margin:'10px 0 7px',
+						// 	overflow:'hidden',
+						// 	lineHeight:'21px',
+						// 	color:'#999',
+						// })
+						// var star = $('<span>')
+						// star.addClass('star');
+						// starnum.append(star)
+						// odiv.append(starnum);
+						var honor = $("<span>")
+						honor.css({
+							lineHeight:'25px',
+							width:'350px',
+							display:'block',
+							overflow:'hidden',
+							marginTop:'20px',
+							fontSize:'14px',
+						})
+						honor.text("资质："+obj[i].hospital_honor)
+						odiv.append(honor);
+						var obo = $('<div>');
+						odiv.append(obo);
+						obo.addClass('pp');
+			      var pp =$('.pp');
+			      pp[i].innerHTML = obj[i].hospital_over;
+				 }
+			})
+
+	</script>
+</html>

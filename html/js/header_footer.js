@@ -17,6 +17,7 @@
 		var jumpWrap = document.createElement("div");
 		jumpWrap.className = "jumpWrap";
 		home_all.appendChild(jumpWrap)
+    // var jumbWrap = document.getElementsByClassName('.jumbWrap')
 		function requestAjax(url,callback){
 			var request = new XMLHttpRequest();
 			request.open("GET",url,true);
@@ -31,7 +32,7 @@
 				};
 			};
 		};
-		requestAjax("../../php/code/class1.php",function(obj){
+    requestAjax("../../php/code/class1.php",function(obj){
 			var ul = document.createElement("ul");
 			ul.className = "jumpBox";
 			ul.style.background = "rgba(0,0,0,.7)";
@@ -57,7 +58,7 @@
 			for (var i = 0; i < jumpList.length; i++) {
 				var a = jumpList[i]
 				a.index = i;
-				a.onmouseover = function(){		
+				a.onmouseover = function(){
 					secondjump.innerHTML = ""
 					jumpList[this.index].style.color = "#FF6E7D";
 					jumpList[this.index].style.background = "#0f0f0f";
@@ -86,24 +87,11 @@
 					}
 				}
 			};
+
 		})
-home_all.onmouseover = function(){
-	jumpWrap.style.display = "block"
-}
-home_all.onmouseout = function(){
-	jumpWrap.style.display = "none"
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    home_all.onmouseover = function(){
+      jumpWrap.style.display = "block"
+    }
+    home_all.onmouseout = function(){
+      jumpWrap.style.display = "none"
+    }

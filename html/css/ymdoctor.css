@@ -12,7 +12,7 @@
 			}
 			.doctor .left{
 				float: left;height:200px;width: 200px;border-radius: 50%;margin-right: 50px;
-				
+
 			}
 			.doctor .left img{
 				width: 100%;height:100%;border-radius: 50%;
@@ -92,4 +92,15 @@
 			}
 			.px:hover{
 				 opacity: 1;
+			}
+			#content4{
+			}
+			.zhanwu{
+				width: 1138px;
+				height: 150px;
+				border: 1px solid #e5e5e5;
+				background: url(../img/null-icon.png) 400px center no-repeat;
+				position: relative;
+				z-index: 999;
+				text-align: center;
 			}

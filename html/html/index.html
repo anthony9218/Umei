@@ -5,6 +5,7 @@
 		<title>U美，让你好看</title>
          <link rel="stylesheet" type="text/css" href="../css/heater_footer.css"/>
 		 <link rel="stylesheet" type="text/css" href="../css/goods_home.css"/>
+		 <meta name="viewport" content="width=device-width,initial-scale=0.1,minimum-scale=0.3,maximum-scale=0.7,user-scalable=yes" />
          <style type="text/css">
          	/*U美主页滚动图部分*/
          	.home_main .home_rolling{
@@ -42,7 +43,8 @@
          		height: 12px;
          		border-radius: 50%;
          	}
-			/*首页商品区部分*/
+
+					/*首页商品区部分*/
          	.home_main .home_hot{
          		width: 1200px;
          		margin: 0 auto;
@@ -59,29 +61,30 @@
          		font-weight: 900;
          		font-family: "arial black";
          	}
-			.home_main .home_hot .hot_more{
-				width: 1198px;
-				margin: 0 auto;
-				height: 44px;
-				text-align: center;
-				overflow: hidden;
-				border: 1px solid #f2f2f2;
-			}
-			.home_main .home_hot .hot_more a{
-				display: inline-block;
-				margin-top: 15px;
-				color: #aaa;
-				font-size: 14px;
-			}
-			.home_main .home_hot .hot_more a:hover{
-				color: #ff5776;
-			}
-			.home_main .home_hot .last_more{
-				margin-bottom: 200px;
-			}
-			.jumpWrap{
-				display: block;
-			}
+					.home_main .home_hot .hot_more{
+						width: 1198px;
+						margin: 0 auto;
+						height: 44px;
+						text-align: center;
+						overflow: hidden;
+						border: 1px solid #f2f2f2;
+					}
+					.home_main .home_hot .hot_more a{
+						display: inline-block;
+						margin-top: 15px;
+						color: #aaa;
+						font-size: 14px;
+					}
+					.home_main .home_hot .hot_more a:hover{
+						color: #ff5776;
+					}
+					.home_main .home_hot .last_more{
+						margin-bottom: 200px;
+					}
+
+					.jumpWrap{
+					   display: block;
+				  }
 
 
          </style>
@@ -122,10 +125,10 @@
 				<div class="navs">
 					<div class="home_all">全部分类</div>
 					<div class="home_nav_four">
-						<a href="index.html" class="home_page">首页</a>
+						<a href="index.html" class="home_page" style="background:#e54c5c;">首页</a>
 						<a href="#" class="home_serve">找服务</a>
-						<a href="#" class="home_hospital">找医院</a>
-						<a href="#" class="home_project">项目介绍</a>
+						<a href="ymallhospital.html" class="home_hospital">找医院</a>
+						<a href="class1.html" class="home_project">项目介绍</a>
 					</div>
 				</div>
 			</div>
@@ -234,52 +237,86 @@
 				}
 			}
 
-			// 首页侧边查看部分
-			// ask({
-			// 	url:'',
-			// },function(obj) {
-			//
-			// })
-
       // 热门项目
 			ask({
 			  url:'../../php/code/index.php',
 			},function(obj){
+				for (var j = 0; j < obj.length - 1; j++) {
+		    	for (var i = 0; i < obj.length - 1 - j; i++) {
+		           if (parseInt(obj[i].goods_buynum) > parseInt(obj[i+1].goods_buynum)) {
+								var huan = obj[i];
+								obj[i] = obj[i+1];
+								obj[i+1] = huan;
+		           }
+		        }
+		    }
 				 var hot = $('.hot_goods');
 				 var obj1 = [];
 				 for (var i = 0; i < 8; i++) {
 				 	obj1.push(obj[i])
 				 }
-         		goods(obj,hot);
+         goods(obj1,hot);
 			})
 			// 特惠专区
 			ask({
 			  url:'../../php/code/index.php',
 			},function(obj){
+				for (var j = 0; j < obj.length - 1; j++) {
+		    	for (var i = 0; i < obj.length - 1 - j; i++) {
+		           if (parseInt(obj[i].goods_vip) > parseInt(obj[i+1].goods_vip)) {
+								var huan = obj[i];
+								obj[i] = obj[i+1];
+								obj[i+1] = huan;
+		           }
+		        }
+		    }
 				 var prefer = $('.prefer_goods');
 				 var obj1 = [];
 				 for (var i = 0; i < 4; i++) {
 				 	obj1.push(obj[i])
 				 }
          goods(obj1,prefer);
+				 var goods1 = $('.goods')
+				 var ami = goods1.slice(8)
+				 console.log(obj1[0].goods_vip);
+				 for (var i = 0; i < ami.length; i++) {
+				 	  var mi = $('<div>');
+						$(ami[i]).attr('index',i)
+						var zhe = parseInt(obj1[$(ami[i]).attr('index')].goods_vip)/parseInt(obj1[$(ami[i]).attr('index')].goods_cost)
+            var zhe1 = zhe*10;
+						mi.text(zhe1.toFixed(1)+'折')
+						mi.css({
+							width:'48px',
+							height:'24px',
+							background:'url(../img/tag-bg.png) no-repeat',
+							position:'absolute',
+							bottom:'15px',
+							right:'0',
+							color:'#fff',
+							textAlign:'center',
+							lineHeight:'24px',
+							fontSize:'14px',
+							fontFamily:'arial',
+						})
+						$(ami[i]).append(mi);
+				 }
 			})
 			// 最新上线
 			ask({
 			  url:'../../php/code/index.php',
 			},function(obj){
+				 obj.reverse();
 				 var new1 = $('.new_goods');
 				 var obj1 = [];
-				 for (var i = 0; i < 4; i++) {
+				 for (var i = 25; i < 29; i++) {
 				 	obj1.push(obj[i])
 				 }
-         	goods(obj1,new1);
+         goods(obj1,new1);
 			})
+
 
 			var home_all = document.getElementsByClassName('home_all')[0];
 			home_all.onmouseout = null;
-
-			
-			
 
 
 

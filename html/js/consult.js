@@ -1,6 +1,6 @@
 // 咨询点击后页面覆盖层部分
 function ZI(){
-  var consult = $('.question')
+  var consult = $('.consult')
   consult.on('click',function(){
       var body = $('body');
       var html = $('html');
